@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    height: calc(100vh - 30px);
+    margin: 0;
+    padding: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+#output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    align-content: start;
+    max-width: 100%;
+    margin-top: 10px;
+    cursor: default;
+    height: 100%;
+    padding: 5px 0;
+    background-color: blanchedalmond;
+    padding: 5px;
+}
+.output:-moz-drag-over {
+    outline: 2px solid blue;
+}
+/* #dropZone {
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    z-index: 0;
+} */
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    max-width: 100%;
+    cursor: default;
+}
+
+button {
+    white-space: nowrap;
+    padding: 5px;
+}
+
+#inputText {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: auto;
+    padding: 5px;
+}
+
+
+.char {
+    display: inline-block;
+    /* user-select: none; */
+    /* cursor: pointer; */
+}
+.selected {
+    background-color: yellow;
+    color: blue;
+}
+.selection_box {
+    position: absolute;
+    border: 1px dashed blue;
+    background-color: rgba(14, 14, 243, 0.17);
+    display: none;
+}
+.dragging {
+    opacity: 0.5;
+}
+
+.insert-point {
+    width: 2px;
+    height: 15px;
+    background-color: red;
+    position: absolute;
+    display: none;
+
+}
+
+.empty {
+    margin-right: 10px;
+}
