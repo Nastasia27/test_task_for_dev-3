@@ -7,8 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
 }
+
 #output {
     display: flex;
     flex-wrap: wrap;
@@ -20,24 +20,8 @@ body {
     cursor: default;
     height: 100%;
     padding: 5px 0;
-    background-color: blanchedalmond;
     padding: 5px;
 }
-.output:-moz-drag-over {
-    outline: 2px solid blue;
-}
-/* #dropZone {
-    background-color: aqua;
-    padding: 10px;
-    margin: 10px 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100px;
-    z-index: 0;
-} */
 
 form {
     display: flex;
@@ -60,24 +44,23 @@ button {
     padding: 5px;
 }
 
-
 .char {
     display: inline-block;
-    /* user-select: none; */
-    /* cursor: pointer; */
 }
+
 .selected {
-    background-color: yellow;
     color: blue;
 }
+
 .selection_box {
     position: absolute;
     border: 1px dashed blue;
     background-color: rgba(14, 14, 243, 0.17);
     display: none;
 }
-.dragging {
-    opacity: 0.5;
+
+.dragged_item {
+    color: blue;
 }
 
 .insert-point {
@@ -86,9 +69,14 @@ button {
     background-color: red;
     position: absolute;
     display: none;
-
 }
 
 .empty {
     margin-right: 10px;
+}
+
+.drag-image {
+    position: absolute;
+    top: -100px;
+    color: rgb(43, 23, 23, 0.5);
 }
